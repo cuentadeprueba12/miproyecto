@@ -1,0 +1,1 @@
+console.log("Cafetería Capibara cargada");

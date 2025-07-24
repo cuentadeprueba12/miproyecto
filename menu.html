@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Menú</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Caompatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="recursos/logo.png" >
+    <style>
+        body {
+    font-family: sans-serif;
+    background-color: #f3e5dc;
+    margin: 0;
+    color: #4b2e1f;
+}
+header {
+    text-align: center;
+    background-color: #6f4e37;
+    padding: 20px;
+    color: white;
+}
+.logo {
+    width: 80px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider {
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite;
+}
+.slide {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+.nav-links {
+    background-color: #8b5e3c;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.nav-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+    <center>
+    <h2>Menú Completo</h2>
+    <div class="menu-grid">
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?cappuccino" alt="Capuchino">
+        <h3>Capuchino</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Capuchino')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?vanilla-latte" alt="Latte Vainilla">
+        <h3>Latte Vainilla</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Latte Vainilla')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?espresso" alt="Espresso">
+        <h3>Espresso</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Espresso')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?chai-tea" alt="Té Chai">
+        <h3>Té Chai</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Té Chai')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?americano-coffee" alt="Café Americano">
+        <h3>Café Americano</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Café Americano')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?mocha-coffee" alt="Café Mocha">
+        <h3>Café Mocha</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Café Mocha')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?matcha-latte" alt="Matcha Latte">
+        <h3>Matcha Latte</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Matcha Latte')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?hot-chocolate" alt="Chocolate Caliente">
+        <h3>Chocolate Caliente</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Chocolate Caliente')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?strawberry-smoothie" alt="Smoothie Fresa">
+        <h3>Smoothie Fresa</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Smoothie Fresa')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?lemonade" alt="Limonada">
+        <h3>Limonada</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Limonada')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?croissant" alt="Croissant">
+        <h3>Croissant</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Croissant')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?blueberry-muffin" alt="Muffin de Arándanos">
+        <h3>Muffin de Arándanos</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Muffin de Arándanos')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?brownie" alt="Brownie">
+        <h3>Brownie</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Brownie')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?chocolate-cake" alt="Pastel de Chocolate">
+        <h3>Pastel de Chocolate</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Pastel de Chocolate')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?cheesecake" alt="Cheesecake">
+        <h3>Cheesecake</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Cheesecake')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?oatmeal-cookie" alt="Galleta de Avena">
+        <h3>Galleta de Avena</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Galleta de Avena')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?apple-pie" alt="Pie de Manzana">
+        <h3>Pie de Manzana</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Pie de Manzana')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?tiramisu" alt="Tiramisú">
+        <h3>Tiramisú</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Tiramisú')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?glazed-donut" alt="Dona Glaseada">
+        <h3>Dona Glaseada</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Dona Glaseada')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?ice-cream" alt="Helado">
+        <h3>Helado</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Helado')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?french-toast" alt="Tostadas Francesas">
+        <h3>Tostadas Francesas</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Tostadas Francesas')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?pancakes" alt="Hot Cakes">
+        <h3>Hot Cakes</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Hot Cakes')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?chicken-sandwich" alt="Sándwich de Pollo">
+        <h3>Sándwich de Pollo</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Sándwich de Pollo')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?panini" alt="Panini de Jamón">
+        <h3>Panini de Jamón</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Panini de Jamón')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?vegetable-wrap" alt="Wrap de Vegetales">
+        <h3>Wrap de Vegetales</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Wrap de Vegetales')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?tuna-sandwich" alt="Baguette de Atún">
+        <h3>Baguette de Atún</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Baguette de Atún')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?caesar-salad" alt="Ensalada César">
+        <h3>Ensalada César</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Ensalada César')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?quinoa-salad" alt="Ensalada de Quinoa">
+        <h3>Ensalada de Quinoa</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Ensalada de Quinoa')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?vegan-burger" alt="Hamburguesa Vegana">
+        <h3>Hamburguesa Vegana</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Hamburguesa Vegana')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?personal-pizza" alt="Pizza Personal">
+        <h3>Pizza Personal</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Pizza Personal')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?breakfast-tacos" alt="Tacos de Desayuno">
+        <h3>Tacos de Desayuno</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Tacos de Desayuno')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?egg-burrito" alt="Burrito de Huevo">
+        <h3>Burrito de Huevo</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Burrito de Huevo')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?molletes" alt="Molletes">
+        <h3>Molletes</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Molletes')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?chilaquiles" alt="Chilaquiles Verdes">
+        <h3>Chilaquiles Verdes</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Chilaquiles Verdes')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?quesadillas" alt="Quesadillas">
+        <h3>Quesadillas</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Quesadillas')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?tamales" alt="Tamal Oaxaqueño">
+        <h3>Tamal Oaxaqueño</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Tamal Oaxaqueño')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?scrambled-eggs" alt="Huevos al Gusto">
+        <h3>Huevos al Gusto</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Huevos al Gusto')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?enfrijoladas" alt="Enfrijoladas">
+        <h3>Enfrijoladas</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Enfrijoladas')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?fruit-bowl" alt="Bowl de Frutas">
+        <h3>Bowl de Frutas</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Bowl de Frutas')">Agregar</button>
+    </div>
+    
+    <div class="menu-item">
+        <img src="https://source.unsplash.com/400x300/?oatmeal" alt="Avena con Miel">
+        <h3>Avena con Miel</h3>
+        <p>Precio: $45 MXN</p>
+        <button onclick="agregarCarrito('Avena con Miel')">Agregar</button>
+    </div>
+    </div>
+    <a href='index.html'>Volver al inicio</a>
+</center>
+</body>
+</html>
